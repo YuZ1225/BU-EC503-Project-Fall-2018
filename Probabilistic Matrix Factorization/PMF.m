@@ -39,11 +39,15 @@ function [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_mis
     MAE_baseline = mean(abs(rating_to_pred(:,3) - baseline));
     RMSE_baseline = sqrt(mean((rating_to_pred(:,3) - baseline).^2));
     
+%     bad initialize    
+%     U = ones(itm_num, para_d); % item matrix
+%     V = ones(usr_num, para_d); % user matrix
+%     U = U / sqrt(para_d/5);
+%     V = V / sqrt(para_d);
+
+    U = (1 * randn(para_d, itm_num) + 1/sqrt(para_d/3))';
+    V = (1 * randn(para_d, usr_num) + 1/sqrt(para_d/3))';
     
-    U = ones(itm_num, para_d); % item matrix
-    V = ones(usr_num, para_d); % user matrix
-    U = U / sqrt(para_d/5);
-    V = V / sqrt(para_d/5);
     W = double(full(data_matrix>0));
     
     W = sparse(W);  % for the entire data set

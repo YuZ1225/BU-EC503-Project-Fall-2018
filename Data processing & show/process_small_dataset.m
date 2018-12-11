@@ -45,6 +45,7 @@ daspect([1 1 1])
 title('Data Distribution of Small Dataset')
 xlabel('User ID')
 ylabel('Book ID')
+
 [small_num_book, small_num_user] = size(small_dataset);
 small_num_rating = sum(sum(small_dataset > 0));
 small_dataset_matrix = zeros(small_num_rating, 3);

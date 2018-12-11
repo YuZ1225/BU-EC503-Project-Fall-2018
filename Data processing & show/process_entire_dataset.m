@@ -60,6 +60,8 @@ for i = 1:b
 end
 data_matrix_entire = sparse(tmp(:,1),tmp(:,2),tmp(:,3),book_num,user_num);
 
+% data_matrix_entire(data_matrix_entire > 5 & data_matrix_entire< 10) = data_matrix_entire(data_matrix_entire > 5 & data_matrix_entire< 10)/2;
+
 % save data_entire.mat data_matrix_entire rating_to_pred_entire
 % learning rate should be 0.001, 0.005 too large
 % iter = 100
