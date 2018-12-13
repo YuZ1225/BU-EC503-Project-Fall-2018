@@ -59,5 +59,17 @@ The realted files are in the `cos similarity` folder:
 <a href="https://www.codecogs.com/eqnedit.php?latex=RMSE=\sqrt{MAE}={\sqrt&space;\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?RMSE=\sqrt{MAE}={\sqrt&space;\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}}" title="RMSE=\sqrt{MAE}={\sqrt \frac{\sum_N{p_{ij} - r_{ij}}}{N}}" /></a></br>
 
 ## Reference
-1.P.Spachtholz Book recommender:Collaborative filtering,shiny:https://www.kaggle.com/ph </br>
-2.Wikipedia-contributors.Cosine similarity in wikipediahttps://en.wikipedia.org/w/index.php?title=cosinesimilarity&oldid=872928175,2018, December1
+[1] P. Spachtholz. Book recommender: Collaborative filtering, shiny : https://www.kaggle.com/philippsp/bookrecommender-collaborative-filtering-shiny/data.
+[2] Wikipedia-contributors.Cosine similarity in wikipedia: https://en.wikipedia.org/w/index.php?title=cosinesimilarity&oldid=872928175. 2018, December1
+
+[3] J. S. Breese, D. Heckerman, and C. Kadie. Empirical analysis of predictive algorithms for collaborative filtering. In Proceedings of the Fourteenth Conference on Uncertainty in Artificial Intelligence, UAI’98, pages 43–52, San Francisco, CA, USA, 1998. Morgan Kaufmann Publishers Inc.
+[4] L. Cao, Y. Wang, and Y. Zhao. Github link: https://github.com/yuz1225/bu-ec503-project-fall-2018.git.
+[5] J. Davidson, B. Liebald, J. Liu, P. Nandy, T. Van Vleet, U. Gargi, S. Gupta, Y. He, M. Lambert, B. Livingston, and D. Sampath. The youtube video recommendation system. In Proceedings of the Fourth ACM Conference on Recommender Systems, RecSys ’10, pages 293–296, New York, NY, USA, 2010. ACM.
+[6] R. Salakhutdinov and A. Mnih. Probabilistic matrix factorization. In Proceedings of the 20th International Conference on Neural Information Processing Systems, NIPS’07, pages 1257–1264, USA, 2007. Curran Associates Inc.
+[7] B. Sarwar, G. Karypis, J. Konstan, and J. Riedl. Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th International Conference on World Wide Web, WWW’01, pages 285–295, New York, NY, USA, 2001. ACM.
+[8] J. Schafer, D. Frankowski, J. Herlocker, and S. Sen. Collaborative filtering recommender systems. In Brusilovsky P., Kobsa A., Nejdl W. (eds) The Adaptive Web, Lecture Notes in Computer Science, vol 4321, Berlin, Heidelberg, 2007. Springer.
+[9] X. Su and T. M. Khoshgoftaar. A survey of collaborative filtering techniques. In Advances in Artificial Intelligence, Vol. 2009, Article ID 421425, 2009.
+
+
+
+
