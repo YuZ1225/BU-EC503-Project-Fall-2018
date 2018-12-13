@@ -12,16 +12,9 @@ First we built a matrix of user-items and added all the missing data to 0. Then 
 
 1.Pearson coefficient</br>
 2.Cosine Similarity</br>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-居中格式: $$xxx$$
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-靠左格式: \\(xxx\\)
-\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
-测试
-$$\frac{7x+5}{1+y^2}$$
-\\(l(x_i) = - \log_2 P(x_i)\\)
 
-<img src="http://www.forkosh.com/mathtex.cgi? $$cos(A,B) =\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}$$">
+<a href="https://www.codecogs.com/eqnedit.php?latex=cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" title="cos(A,B)=\frac{A\cdot B}{\left \| A \right \| *\left \| B \right \| }=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" /></a>
+
 ## Model-based CF
 1.Naive Bayesian</br>
 2.PMF</br>
