@@ -13,7 +13,7 @@ We use two ways to calculate the similarity between predicted users and other us
 
 1.Pearson coefficient</br>
 
-In this project, we use Pearson correlation \cite{Breese:1998:EAP:2074094.2074100} coefficient to calculate the similarity between user_i and user_j . The correlation is:  
+In this project, we use Pearson correlation coefficient to calculate the similarity between user_i and user_j . The correlation is:  
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=w(i,j)&space;=&space;\frac{\sum_n(v_{i,n}&space;-&space;\overline{v}_n)(v_{j,n}&space;-&space;\overline{v}_n)}{\sqrt{\sum_n(v_{i,n}&space;-&space;\overline{v}_i)^2&space;\sum_j(v_{i,j}&space;-&space;\overline{v}_i)^2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w(i,j)&space;=&space;\frac{\sum_n(v_{i,n}&space;-&space;\overline{v}_n)(v_{j,n}&space;-&space;\overline{v}_n)}{\sqrt{\sum_n(v_{i,n}&space;-&space;\overline{v}_i)^2&space;\sum_j(v_{i,j}&space;-&space;\overline{v}_i)^2}}" title="w(i,j) = \frac{\sum_n(v_{i,n} - \overline{v}_n)(v_{j,n} - \overline{v}_n)}{\sqrt{\sum_n(v_{i,n} - \overline{v}_i)^2 \sum_j(v_{i,j} - \overline{v}_i)^2}}" /></a></br>  
 The realted files are in the `Pearson` folder:
