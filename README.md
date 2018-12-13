@@ -13,7 +13,7 @@ First we built a matrix of user-items and added all the missing data to 0. Then 
 1.Pearson coefficient
 2.Cosine Similarity
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=$$cos(A,B) = \frac{A\cdot B}{\norm{A}*\norm{B}}=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}$$" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=$$cos(A,B) = \frac{A \cdot B}{\norm{A}*\norm{B}}=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}$$" style="border:none;">
 ## Model-based CF
 1.Naive Bayesian
 2.PMF
