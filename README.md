@@ -7,12 +7,12 @@ We chose to use the book recommender data from kaggle. We got a huge data set wh
 2. Extract Small Dataset
 Because the sparseness of the original matrix is too high, we extracted a matrix of size 48*35 with sparsity of 31.07%. At the same time, we have increased its sparsity by 35% to 80 % each time by 5%. So we have a total of 10 small data sets with different sparsity levels. These 10 small data sets are almost identical to the distribution of the original data set. The extraction process for small data sets can be found in the XXXX folder. The file name of the extraction result is XXXX.
 
-*`process_entire_dataset.m` will do the processing over the entire dataset and generate the matrix and labels that our models need. The data is also saved in `data_entire.mat`
-*`process_small_dataset.m` need to be run after running `process_entire_dataset.m`, which will generate 10 small datasets with sparsity from 35% to 80%, along with the label that need to be predicted. The data is also saved in `data.mat`
-*`create_typical_dataset.m` is used to generate 10 by 10 typical dataset wilth 2 latent features, along with the label to be predicted. The data is also saved in `data_typical.mat`
-*Other functions are used to show the results with the data gathered from our different algorithms.
-*Include lot of result data for the convenience of repeating use.
-*Include lot of figures of our result.
+* `process_entire_dataset.m` will do the processing over the entire dataset and generate the matrix and labels that our models need. The data is also saved in `data_entire.mat`
+* `process_small_dataset.m` need to be run after running `process_entire_dataset.m`, which will generate 10 small datasets with sparsity from 35% to 80%, along with the label that need to be predicted. The data is also saved in `data.mat`
+* `create_typical_dataset.m` is used to generate 10 by 10 typical dataset wilth 2 latent features, along with the label to be predicted. The data is also saved in `data_typical.mat`
+* Other functions are used to show the results with the data gathered from our different algorithms.
+* Include lot of result data for the convenience of repeating use.
+* Include lot of figures of our result.
 
 ## Memory-based CF
 For the original matric, first we built a matrix of user-items and added all the missing data to 0. Then we selected those who read more than 7 books and randomly selected one of them from our books as our predictions and test sets. Next, a memory-based algorithm is used to find the most similar three users who read this book by calculating the similarity between users using a user-based approach. We take the average and round off to get our prediction.
@@ -43,14 +43,14 @@ The realted files are in the `cos similarity` folder:
 
 ## Model-based CF
 1.Naive Bayesian</br>
-*`NB_old.m` is abandoned. It is a script to run the entire dataset.
-*`NB.m` is a function, whch takes  two inputs. The first input is the rating matrix withous the rating that need to be predicted. The second input is a rating_to_pred matrix with three columns: the first column for user, the scond column for item(book in our dataset) and the third column for true ratings. The output is saved in a struct NB_output.
+* `NB_old.m` is abandoned. It is a script to run the entire dataset.
+* `NB.m` is a function, whch takes  two inputs. The first input is the rating matrix withous the rating that need to be predicted. The second input is a rating_to_pred matrix with three columns: the first column for user, the scond column for item(book in our dataset) and the third column for true ratings. The output is saved in a struct NB_output.
 
 
 
 2.PMF</br>
-*`PMF.m` is also a function. Run it as: [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_missing, mu, lambda, rm). The data_matrix and the rating_to_pred is the same as `NB.m`: The first input is the rating matrix withous the rating that need to be predicted. The second input is a rating_to_pred matrix with three columns: the first column for user, the scond column for item(book in our dataset) and the third column for true ratings. The output is saved in a struct NB_output. The rest parameters are iteration number, dimension of latent features, weight fot missing data, learning rate \mu, regularization parameter \lambda and the rating offset for missing data. All of them are scalars. Weight fot missing data and the rating offset for missing data have not been verified.
-*`pmf_optimize` is used to optimize the parameter in PMF model and helps generate some visualized figures.
+* `PMF.m` is also a function. Run it as: [PMF_output]= PMF(data_matrix, rating_to_pred, iteration, d, weight_missing, mu, lambda, rm). The data_matrix and the rating_to_pred is the same as `NB.m`: The first input is the rating matrix withous the rating that need to be predicted. The second input is a rating_to_pred matrix with three columns: the first column for user, the scond column for item(book in our dataset) and the third column for true ratings. The output is saved in a struct NB_output. The rest parameters are iteration number, dimension of latent features, weight fot missing data, learning rate \mu, regularization parameter \lambda and the rating offset for missing data. All of them are scalars. Weight fot missing data and the rating offset for missing data have not been verified.
+* `pmf_optimize` is used to optimize the parameter in PMF model and helps generate some visualized figures.
 
 ## Evaluating Metric
 1.MAE</br>
