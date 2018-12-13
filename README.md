@@ -23,7 +23,7 @@ In the folder named "cos smilarity", the file named "large_version.m" is the fil
 1.Naive Bayesian</br>
 2.PMF</br>
 ## Evaluating Metric
-1.MAE
+1.MAE</br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=MAE=\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?MAE=\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}" title="MAE=\frac{\sum_N{p_{ij} - r_{ij}}}{N}" /></a></br>
 2. RMSE/RMSD</br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=RMSE=\sqrt{MAE}={\sqrt&space;\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?RMSE=\sqrt{MAE}={\sqrt&space;\frac{\sum_N{p_{ij}&space;-&space;r_{ij}}}{N}}" title="RMSE=\sqrt{MAE}={\sqrt \frac{\sum_N{p_{ij} - r_{ij}}}{N}}" /></a></br>
