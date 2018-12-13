@@ -27,7 +27,13 @@ The realted files are in the `Pearson` folder:
 <a href="https://www.codecogs.com/eqnedit.php?latex=cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" title="cos(A,B)=\frac{A\cdot B}{\left \| A \right \| *\left \| B \right \| }=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" /></a></br>
 Where A and B represent two users, respectively. Ai and Bi represent the components of the vector A and B, respectively. </br>
 When processing small data, the entire data set has only 48 books. When the result is predicted, if the user reads less than two books, then directly select the most similar users. If the user has read more than 4 books, then the two closest users are averaged. </br>
-In the folder named "cos smilarity", the file named "large_version.m" is the file that executes all the original data sets. The file named "small_version1.m" execute the 10 extracting small datasets.  "LargecosAns.mat" and "cosAns.mat" correspond to the MAE and MSE results of the two experiments, respectively.
+The realted files are in the `cos similarity` folder:
+ * `large_version.m`: Executing all the original data sets
+ * `small_version1.m`: Executing the 10 extracting small datasets.
+ * `LargecosAns.mat`: All parameters and result for whole data sets
+ * `cosAns.mat`: The Result of 10 small data sets
+ 
+
 ## Model-based CF
 1.Naive Bayesian</br>
 2.PMF</br>
