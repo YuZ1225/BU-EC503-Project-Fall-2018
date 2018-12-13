@@ -10,14 +10,14 @@ Because the sparseness of the original matrix is too high, we extracted a matrix
 ## Memory-based CF
 First we built a matrix of user-items and added all the missing data to 0. Then we selected those who read more than 7 books and randomly selected one of them from our books as our predictions and test sets. Next, a memory-based algorithm is used to find the most similar three users by calculating the similarity between users using a user-based approach. We take the average and round off to get our prediction.
 
-1.Pearson coefficient
-2.Cosine Similarity
+1.Pearson coefficient<\br>
+2.Cosine Similarity<\br>
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=$$cos(A,B) = \frac{A \cdot B}{\norm{A}*\norm{B}}=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}$$" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=$$cos(A,B) = \frac{A\cdotB}{\norm{A}*\norm{B}}=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}$$" style="border:none;">
 ## Model-based CF
-1.Naive Bayesian
-2.PMF
+1.Naive Bayesian<\br>
+2.PMF<\br>
 
 ## Reference
-1.P.Spachtholz Book recommender:Collaborative filtering,shiny:https://www.kaggle.com/ph \n
+1.P.Spachtholz Book recommender:Collaborative filtering,shiny:https://www.kaggle.com/ph <\br>
 2.Wikipedia-contributors.Cosine similarity in wikipediahttps://en.wikipedia.org/w/index.php?title=cosinesimilarity&oldid=872928175,2018, December1
