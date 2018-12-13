@@ -12,7 +12,9 @@ For the original matric, first we built a matrix of user-items and added all the
 We use two ways to calculate the similarity between predicted users and other users：
 
 1.Pearson coefficient</br>
+
 In this project, we use Pearson correlation \cite{Breese:1998:EAP:2074094.2074100} coefficient to calculate the similarity between user_i and user_j . The correlation is:  
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=w(i,j)&space;=&space;\frac{\sum_n(v_{i,n}&space;-&space;\overline{v}_n)(v_{j,n}&space;-&space;\overline{v}_n)}{\sqrt{\sum_n(v_{i,n}&space;-&space;\overline{v}_i)^2&space;\sum_j(v_{i,j}&space;-&space;\overline{v}_i)^2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?w(i,j)&space;=&space;\frac{\sum_n(v_{i,n}&space;-&space;\overline{v}_n)(v_{j,n}&space;-&space;\overline{v}_n)}{\sqrt{\sum_n(v_{i,n}&space;-&space;\overline{v}_i)^2&space;\sum_j(v_{i,j}&space;-&space;\overline{v}_i)^2}}" title="w(i,j) = \frac{\sum_n(v_{i,n} - \overline{v}_n)(v_{j,n} - \overline{v}_n)}{\sqrt{\sum_n(v_{i,n} - \overline{v}_i)^2 \sum_j(v_{i,j} - \overline{v}_i)^2}}" /></a></br>  
 The realted files are in the `Pearson` folder:
  * `Pearson_all_data.m`: Model trained by the whole dataset.
@@ -25,13 +27,7 @@ The realted files are in the `Pearson` folder:
 <a href="https://www.codecogs.com/eqnedit.php?latex=cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?cos(A,B)=\frac{A\cdot&space;B}{\left&space;\|&space;A&space;\right&space;\|&space;*\left&space;\|&space;B&space;\right&space;\|&space;}=\frac{\sum_{i=1}^{n}A_{i}&space;*&space;B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2}&space;*&space;\sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" title="cos(A,B)=\frac{A\cdot B}{\left \| A \right \| *\left \| B \right \| }=\frac{\sum_{i=1}^{n}A_{i} * B_{i}}{\sqrt{\sum_{i=1}^{n}A_{i}^{2} * \sqrt{\sum_{i=1}^{n}B_{i}^{2}}}}" /></a></br>
 Where A and B represent two users, respectively. Ai and Bi represent the components of the vector A and B, respectively. </br>
 When processing small data, the entire data set has only 48 books. When the result is predicted, if the user reads less than two books, then directly select the most similar users. If the user has read more than 4 books, then the two closest users are averaged. </br>
-The realted files are in the `cos similarity` folder:
- * `large_version.m`: Executing all the original data sets.
- * `small_version1.m`: Execute the 10 extracting small datasets.
- * `LargecosAns.mat`: All parameters and result for whole data sets
- * `cosAns.mat`: Result for 10 small data sets.
- 
-
+In the folder named "cos smilarity", the file named "large_version.m" is the file that executes all the original data sets. The file named "small_version1.m" execute the 10 extracting small datasets.  "LargecosAns.mat" and "cosAns.mat" correspond to the MAE and MSE results of the two experiments, respectively.
 ## Model-based CF
 1.Naive Bayesian</br>
 2.PMF</br>
